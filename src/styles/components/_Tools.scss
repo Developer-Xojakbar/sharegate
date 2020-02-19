@@ -1,0 +1,69 @@
+.tools-bckg {
+    background-color: rgb(255, 246, 231);
+}
+
+.tools {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-top: 6rem;
+    flex-wrap: wrap;
+
+    > * {
+        width: 100%;
+    }
+
+    &__header {
+        text-align: center;
+        font-size: 2rem;
+        line-height: 1.1;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    &__context {
+        text-align: center;
+        font-size: 1.1rem;
+        color: rgb(86, 96, 119);
+        margin-bottom: 3.75rem;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        padding: 0 3.6rem;
+
+        &-tool:nth-of-type(n+2) {
+            margin-left: 3.6rem;
+        }
+
+        &-tool {
+            width: 100%;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            text-align: center;
+
+            &-logo {
+                max-width: 100%;
+                height: auto;
+                vertical-align: middle;
+            }
+
+            &-header {
+                margin-top: 1.5rem;
+                margin-bottom: 1rem;
+                font-size: 1.6rem;
+                line-height: 1.2;
+                font-weight: 600;
+            }
+
+            &-link {
+                font-weight: 500;
+                color: rgb(32 , 150 ,255);
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
