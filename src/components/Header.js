@@ -1,8 +1,17 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import React, { useState , useEffect } from 'react';
 
-const Header = ({ scroll }) => {
+const Header = () => {
+    const [scroll, setScroll] = useState(0);
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            const value = window.scrollY;
+            setScroll(value);
+        });
+    },[])
+
     return (
         <React.Fragment>
             <div className="header container">

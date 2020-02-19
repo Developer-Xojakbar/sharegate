@@ -1,19 +1,14 @@
-import React, { useState , useEffect } from 'react';
+import React from 'react';
 import Header from './Header';
+import MicrosoftCloud from './MicrosoftCloud';
+import Sections from './Sections';
 
 const App = () => {
-    const [scroll, setScroll] = useState(0);
-
-    useEffect(() => {
-        window.addEventListener('scroll', () => {
-            const value = window.scrollY;
-            setScroll(value);
-        });
-    },[])
-
     return (
         <React.Fragment>
-            <Header scroll={scroll} />
+            <Header/>
+            <MicrosoftCloud />
+            <Sections />
         </React.Fragment>
     );
 };

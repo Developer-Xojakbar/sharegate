@@ -1,0 +1,178 @@
+.mscloud {
+    padding-top: 2rem;
+    position: relative;
+    flex-wrap: wrap;
+
+    &__section {
+        display: flex;
+
+        &__info {
+            align-self: center;
+            width: 41.666667%;
+            max-width: 32rem;
+            margin-right: auto;
+
+            &-header {
+                margin: 0;
+                font-weight: 600;
+                font-size: 1.7rem;
+                line-height: 1.1;
+                margin-bottom: 1rem;
+
+                > div {
+                    display: inline-flex;
+                    vertical-align: top;
+                    height: 1.9rem;
+                    width: 251px;
+                    overflow: hidden;
+                    position: relative;
+
+                    > div {
+                        height: max-content;
+                        width: 100%;
+                        flex-wrap: wrap;
+                        position: absolute;
+                        bottom: 0;
+                        animation: words-animate 6s linear infinite;
+
+                        > span {
+                            display: inline-flex;
+                            align-items: center;
+                            line-height: 1.1;
+                            height: 1.9rem;
+                        }
+
+                        @keyframes words-animate
+                        {
+                            0% , 15%
+                            {
+                                bottom: 0;
+                            }
+                            17.5% , 50%
+                            {
+                                bottom: -100%;
+                            }
+                            52.5% , 82.5%
+                            {
+                                bottom: -200%;
+                            }
+                            85% , 100%
+                            {
+                                bottom: -300%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-main {
+                margin-bottom: 2rem;
+                margin-top: 1.5rem;
+                font-size: 1.1rem;
+            }
+
+            &-btns {
+                justify-content: flex-start;
+                display: flex;
+                align-items: center;
+                flex: wrap;
+
+                &-free_trial {
+                    width: auto;
+                    color: white;
+                    background-color: rgb(14 , 28 , 61);
+                    font-size: 18px;
+                    padding: 0 32px;
+                    height: 48px;
+                    line-height: 48px;
+                    border-radius: 50px;
+                    font-weight: 500;
+                    transition: .3s ease-in-out;
+                    text-decoration: none;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    white-space: nowrap;
+                    outline: 0;
+                    -webkit-appearance: none;
+                    text-align: center;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #323e5a;
+                    }
+                }
+
+                &-interactive_demo {
+                    width: auto;
+                    margin-left: 1rem;
+                    color: rgb(14 , 28 , 61);
+                    background-color: white;
+                    font-size: 18px;
+                    padding: 0 32px;
+                    height: 48px;
+                    line-height: 48px;
+                    border-radius: 50px;
+                    font-weight: 500;
+                    transition: .3s ease-in-out;
+                    text-decoration: none;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid rgb(14 , 28 , 61);
+                    white-space: nowrap;
+                    outline: 0;
+                    -webkit-appearance: none;
+                    text-align: center;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: rgb(14 , 28 , 61);
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        &__image {
+            max-width: 100%;
+            padding-left: 4rem;
+            margin-left: auto;
+            margin-right: auto;
+
+            > img {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 100%;
+                height: auto;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    &__footer {
+        width: 100%;
+        margin-top: 4.35rem;
+        
+        &-info {
+            margin: 1.5rem 0;
+            font-weight: 500;
+            font-size: 1.1rem;
+            color: rgb(183, 187 , 197);
+            text-align: center;
+        }
+
+        &-logo_images {
+            flex-wrap: nowrap;
+            margin: 1.5rem 0;
+            justify-content: space-around;
+            align-items: center;
+            display: flex;
+
+            > img {
+                margin: 0.5rem 1rem;
+            }
+        }
+    }
+}
