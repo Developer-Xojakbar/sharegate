@@ -1,0 +1,126 @@
+.support {
+    align-items: center;
+    margin-top: 6rem;
+    padding: 0 42px;
+
+    &__image {
+        padding: 0 4.225rem;
+        width: 50%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+        &-bckg-1 {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            object-fit: contain;
+            background-position: 50%;
+            z-index: -50;
+        }
+
+        &-container {
+            margin: 2rem;
+            position: relative;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+            display: inline-flex;
+            border-radius: 0.8rem;
+            background-color: white;
+
+            &-agent {
+                transition: all 0.25s;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                max-width: 100%;
+                height: auto;
+                visibility: hidden;
+                opacity: 0;
+
+                &.active {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+
+            &-agent:nth-last-of-type(1){
+                position: relative!important;
+            }
+        }
+
+        &-bckg-2 {
+            margin-top: 4rem;
+            margin-right: 4.5rem;
+            z-index: 50;
+            top: 0;
+            right: 0;
+            position: absolute;
+        }
+    }
+
+    &__context {
+        padding: 5rem 1.5rem;
+        width: 50%;
+
+        &-header-1 {
+            font-size: 2.4rem;
+            line-height: 1.1;
+            font-weight: 600;
+            margin-bottom: 3rem;
+        }
+
+        &-agent {
+            display: none;
+
+            &-name {
+                font-size: 2rem;
+                line-height: 1.2;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+
+            &-content {
+                font-size: 1.2rem;
+                color: rgb(86 , 96 , 119);
+                margin-bottom: 1.5rem;
+
+            }
+        }
+
+        &-agent.active {
+            display: block;
+        }
+
+        &-btns {
+            margin-top: 1.5rem;
+            justify-content: flex-start;
+            display: flex;
+
+
+            &-avatar {
+                height: 40px;
+                width: 40px;
+                transition: all 0.25s;
+                opacity: 0.5;
+                margin-right: 1rem;
+                cursor: pointer;
+                filter: grayscale(100%);
+                border-radius: 80px;
+            }
+
+            &-avatar:hover {
+                opacity: 1;
+            }
+
+            &-avatar.active{
+                opacity: 1;
+                filter: grayscale(0);
+            }
+        }
+    }
+}

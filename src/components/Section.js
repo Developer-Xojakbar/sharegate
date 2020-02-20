@@ -4,6 +4,10 @@ import IconSVG from './IconSVG';
 const Section = props => {
     const { name, images, context, btnIcon, btnText, linkHref, linkText, reverse } = props;
     const [select, setSelected] = useState(`${name}-1`);
+    
+    const handleSelect = (selected) => {
+        setSelected(selected);
+    }
 
     const changePlaces = () => {
         const sectionImages = (
@@ -14,10 +18,6 @@ const Section = props => {
             </div>
         );
 
-        const handleSelect = (selected) => {
-            setSelected(selected);
-        }
-
         const sectionContext = (
             <div
                 className="section__context"
@@ -26,27 +26,27 @@ const Section = props => {
                 <p className="section__context-blue">{context[0]}</p>
                 <p className="section__context-black">{context[1]}</p>
                 <p className="section__context-text">{context[2]}</p>
-                <label 
+                <div 
                     className={`section__context-btn ${select === `${name}-1` ? "active" : ""}`}
                     onClick={() => {handleSelect(`${name}-1`)}}
                 >
                     <img src={require("../images/SVG/" + btnIcon[0])} alt="btn-icon" />
                     <p>{btnText[0]}</p>
-                </label>
-                <label 
+                </div>
+                <div 
                     className={`section__context-btn ${select === `${name}-2` ? "active" : ""}`}
                     onClick={() => {handleSelect(`${name}-2`)}}
                 >
                     <img src={require("../images/SVG/" + btnIcon[1])} alt="btn-icon" />
                     <p>{btnText[1]}</p>
-                </label>
-                <label 
+                </div>
+                <div 
                     className={`section__context-btn ${select === `${name}-3` ? "active" : ""}`}
                     onClick={() => {handleSelect(`${name}-3`)}}
                 >
                     <img src={require("../images/SVG/" + btnIcon[2])} alt="btn-icon" />
                     <p>{btnText[2]}</p>
-                </label>
+                </div>
                 <a className="section__context-link" href={`${linkHref}`}>
                     {linkText}<IconSVG className="" iconName="icon-arrow-right" />
                 </a>
