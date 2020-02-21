@@ -1,0 +1,66 @@
+/*****************Buttons******************/
+.extend-button {
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    border-radius: 2.5rem;
+    font-weight: 500;
+}
+
+.extend-button-additional {
+    text-decoration: none;
+    justify-content: center;
+    white-space: nowrap;
+    outline: 0;
+    -webkit-appearance: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.extend-button-type-1 { // microsoftcloud , section
+    @extend .extend-button;
+    @extend .extend-button-additional;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    padding: 0 1.6rem;
+    font-size: 0.9rem;
+    width: auto;   
+}
+
+.extend-button-type-2 { // header , footer
+    @extend .extend-button;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    padding: 0 1rem;
+    font-size: 0.8rem;
+}
+/***************Head-context****************/
+.extend-h24px-type-2 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.extend-h2rem-type-1 {
+    font-size: 2rem;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.extend-h2rem-type-2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.extend-h48px-type-1 {
+    font-size: 2.4rem;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.extend-h48px-type-2 {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    font-weight: 600;
+}

@@ -20,9 +20,7 @@
         }
         
         .list-item-name {
-            font-size: 1.2rem;
-            line-height: 1.2;
-            font-weight: 600;
+            @extend .extend-h24px-type-2;
             margin-bottom: 1rem;
         }
 
@@ -72,37 +70,23 @@
             }
 
             &-content {
-                color: rgb(86 , 96 , 119);
+                color: $color-gray-04;
                 margin-bottom: 1.5rem;
                 font-size: 0.9rem;
             }
 
             &-subscribe {
+                @extend .extend-button-type-2;
+                @extend .extend-button-additional;
                 border: 1px solid currentColor;
                 background-color: transparent;
-                color: #0e1c3d;
-                padding: 0 20px;
-                border-radius: 50px;
-                font-size: 16px;
-                line-height: 32px;
-                font-weight: 500;
-                transition: .3s ease-in-out;
-                text-decoration: none;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                height: 32px;
+                color: $color-blue-01;
                 font-family: Calibre;
-                white-space: nowrap;
-                outline: 0;
-                -webkit-appearance: none;
-                text-align: center;
-                cursor: pointer;
 
                 &:hover {
-                    background-color: #0e1c3d;
-                    border-color: #0e1c3d;
-                    color: #fff;
+                    background-color: $color-blue-01;
+                    border-color: $color-blue-01;
+                    color: white;
                 }
             }
         }
@@ -113,7 +97,7 @@
         padding-top: 1.5rem;
         margin-top: 2.5rem;
         line-height: 2;
-        border-top: 1px solid rgb(183 , 187 , 197);
+        border-top: 1px solid $color-gray-08;
         font-size: 0.8rem;
         justify-content: space-between;
         align-items: center;

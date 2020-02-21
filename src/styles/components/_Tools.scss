@@ -1,5 +1,5 @@
 .tools-bckg {
-    background-color: rgb(255, 246, 231);
+    background-color: $color-white-09;
 }
 
 .tools {
@@ -13,10 +13,8 @@
     }
 
     &__header {
+        @extend .extend-h2rem-type-1;
         text-align: center;
-        font-size: 2rem;
-        line-height: 1.1;
-        font-weight: 600;
         margin-top: 1px;
         margin-bottom: 0.9rem;
     }
@@ -25,7 +23,7 @@
         text-align: center;
         font-size: 1.1rem;
         line-height: 1.55;
-        color: rgb(86, 96, 119);
+        color: $color-gray-04;
         margin-top: 1px;
         margin-bottom: 3.7rem;
     }
@@ -62,7 +60,7 @@
 
             &-link {
                 font-weight: 500;
-                color: rgb(32 , 150 ,255);
+                color: $color-blue-10;
 
                 &:hover {
                     text-decoration: none;

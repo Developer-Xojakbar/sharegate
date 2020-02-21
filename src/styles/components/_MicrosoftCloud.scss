@@ -82,57 +82,25 @@
                 flex: wrap;
 
                 &-free_trial {
-                    width: auto;
+                    @extend .extend-button-type-1;
+                    background-color: $color-blue-01;
                     color: white;
-                    background-color: rgb(14 , 28 , 61);
-                    font-size: 18px;
-                    padding: 0 32px;
-                    height: 48px;
-                    line-height: 48px;
-                    border-radius: 50px;
-                    font-weight: 500;
-                    transition: .3s ease-in-out;
-                    text-decoration: none;
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center;
                     border: none;
-                    white-space: nowrap;
-                    outline: 0;
-                    -webkit-appearance: none;
-                    text-align: center;
-                    cursor: pointer;
 
                     &:hover {
-                        background-color: #323e5a;
+                        background-color: $color-blue-02;
                     }
                 }
 
                 &-interactive_demo {
-                    width: auto;
-                    margin-left: 1rem;
-                    color: rgb(14 , 28 , 61);
+                    @extend .extend-button-type-1;
                     background-color: white;
-                    font-size: 18px;
-                    padding: 0 32px;
-                    height: 48px;
-                    line-height: 48px;
-                    border-radius: 50px;
-                    font-weight: 500;
-                    transition: .3s ease-in-out;
-                    text-decoration: none;
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center;
-                    border: 1px solid rgb(14 , 28 , 61);
-                    white-space: nowrap;
-                    outline: 0;
-                    -webkit-appearance: none;
-                    text-align: center;
-                    cursor: pointer;
-
+                    color: $color-blue-01;
+                    border: 1px solid $color-blue-01;
+                    margin-left: 1rem;
+                    
                     &:hover {
-                        background-color: rgb(14 , 28 , 61);
+                        background-color: $color-blue-01;
                         color: white;
                     }
                 }
@@ -165,7 +133,7 @@
             margin: 1.5rem 0;
             font-weight: 500;
             font-size: 1.1rem;
-            color: rgb(183, 187 , 197);
+            color: $color-gray-08;
             text-align: center;
         }
 
