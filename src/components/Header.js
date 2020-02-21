@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState , useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import IconSVG from './IconSVG';
 
 const Header = () => {
     const [scroll, setScroll] = useState(0);
@@ -36,7 +37,9 @@ const Header = () => {
                                 </a>
                             </div>
                         </div>
+                        <IconSVG className="header__main-products-small_down" iconName="icon-small-down" />
                     </div>
+                    <a className="header__main-why-us" href="#">Why us</a>
                     <a className="header__main-support" href="#">Support</a>
                     <a className="header__main-blog" href="#">Blog</a>
                 </div>
@@ -49,18 +52,19 @@ const Header = () => {
                     <a className="header__product-overcast" href="#">
                         <img src={require("../images/SVG/sgovercast-new-logo.svg")} alt="logo" />
                     </a>
-                    <div className="header__product__">
-                        <a className="header__product__-overview" href="#">Overview</a>
-                        <div className="header__product__-features">Features
+                    <div className="header__product__links">
+                        <a className="header__product__links-overview" href="#">Overview</a>
+                        <div className="header__product__links-features">Features
                             <div className="features">
                                 <a href="#">Cost management features</a>
                                 <a href="#">Cost optimization features</a>
                             </div>
+                            <IconSVG className="header__product__links-features-small_down" iconName="icon-small-down" />
                         </div>
-                        <a className="header__product__-interactive-demo" href="#">Interactive demo</a>
-                        <a className="header__product__-pricing" href="#">Pricing</a>
-                        <a className="header__product__-free-trial" href="#">Free trial</a>
-                        <a className="header__product__-log-in" href="#">Log in</a>
+                        <a className="header__product__links-interactive-demo" href="#">Interactive demo</a>
+                        <a className="header__product__links-pricing" href="#">Pricing</a>
+                        <a className="header__product__links-free-trial" href="#">Free trial</a>
+                        <a className="header__product__links-log-in" href="#">Log in</a>
                     </div>
                 </div>
             </div>

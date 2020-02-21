@@ -5,6 +5,7 @@ import Sections from './Sections';
 import Tools from './Tools';
 import Support from './Support';
 import Banner from './Banner';
+import Footer from './Footer';
 
 const App = () => {
     return (
@@ -15,6 +16,7 @@ const App = () => {
             <Tools />
             <Support />
             <Banner />
+            <Footer />
         </React.Fragment>
     );
 };

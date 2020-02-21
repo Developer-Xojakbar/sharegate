@@ -1,0 +1,163 @@
+.footer {
+    margin-top: 12rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+
+    > * {
+        width: 100%;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+
+        &-logo {
+            display: block;
+            fill: black;
+            height: 2.8rem;
+            width: 1rem;
+            margin-right: calc((1/12) * 100% - 20px);
+        }
+        
+        .list-item-name {
+            font-size: 1.2rem;
+            line-height: 1.2;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        &-products,
+        &-learn,
+        &-help_center,
+        &-company{
+            width: calc((2/12) * 100%);
+            padding: 0 0.5rem;
+            margin-bottom: 1rem;
+            margin-left: -0.5rem;
+            margin-right: 11.25px;
+            line-height: 1;
+
+            &-name {
+                @extend .list-item-name;
+            }
+
+            &-link {
+                display: flex;
+                width: fit-content;
+                line-height: 1.2;
+                margin-bottom: 0.5rem;
+                font-size: 0.9rem;
+                opacity: 0.5;
+                text-decoration: none;
+                transition: all 0.2s ease;
+                color: inherit;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            &-link.active {
+                opacity: 1;
+            }
+        }
+
+        &-news_letter {
+            margin-left: -5px;
+            width: calc((3/12) * 100%);
+            padding-left: 0.75rem;
+
+            &-name {
+                @extend .list-item-name
+            }
+
+            &-content {
+                color: rgb(86 , 96 , 119);
+                margin-bottom: 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            &-subscribe {
+                border: 1px solid currentColor;
+                background-color: transparent;
+                color: #0e1c3d;
+                padding: 0 20px;
+                border-radius: 50px;
+                font-size: 16px;
+                line-height: 32px;
+                font-weight: 500;
+                transition: .3s ease-in-out;
+                text-decoration: none;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                height: 32px;
+                font-family: Calibre;
+                white-space: nowrap;
+                outline: 0;
+                -webkit-appearance: none;
+                text-align: center;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #0e1c3d;
+                    border-color: #0e1c3d;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        padding-top: 1.5rem;
+        margin-top: 2.5rem;
+        line-height: 2;
+        border-top: 1px solid rgb(183 , 187 , 197);
+        font-size: 0.8rem;
+        justify-content: space-between;
+        align-items: center;
+
+        &-info {
+            display: flex;
+            width: auto;
+            justify-content: flex-start;
+
+            &-link {
+                margin-left: 2.5rem;
+                text-decoration: none;
+                color: inherit;
+                transition: all 0.2s ease;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &-icons {
+            display: flex;
+            width: auto;
+            justify-content: flex-end;
+
+            &-link {
+                display: inline-flex;
+                align-items: center;
+                margin-left: 0.75rem;
+                width: 0.75rem;
+                height: 1.6rem;
+                opacity: 1;
+                color: inherit;
+                transition: all 0.2s ease;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+
+                > .icon {
+                    width: 12.8px;
+                }
+            }
+        }
+    }
+}
