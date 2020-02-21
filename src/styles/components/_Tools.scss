@@ -17,20 +17,24 @@
         font-size: 2rem;
         line-height: 1.1;
         font-weight: 600;
-        margin-bottom: 1rem;
+        margin-top: 1px;
+        margin-bottom: 0.9rem;
     }
 
     &__context {
         text-align: center;
         font-size: 1.1rem;
+        line-height: 1.55;
         color: rgb(86, 96, 119);
-        margin-bottom: 3.75rem;
+        margin-top: 1px;
+        margin-bottom: 3.7rem;
     }
 
     &__items {
         display: flex;
         justify-content: center;
         padding: 0 3.6rem;
+        margin-bottom: 1px;
 
         &-tool:nth-of-type(n+2) {
             margin-left: 3.6rem;

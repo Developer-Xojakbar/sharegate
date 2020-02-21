@@ -5,30 +5,34 @@
 
     &__section {
         display: flex;
+        margin-left: -2rem;
+        margin-right: -2rem;
 
         &__info {
             align-self: center;
             width: calc((5/12) * 100%);
             max-width: 32rem;
             margin-right: auto;
+            padding-right: 2rem;
+            padding-left: 2rem;
 
             &-header {
                 margin: 0;
                 font-weight: 600;
-                font-size: 1.7rem;
+                font-size: 2.4rem;
                 line-height: 1.1;
                 margin-bottom: 1rem;
 
                 > div {
                     display: inline-flex;
-                    vertical-align: top;
-                    height: 1.9rem;
+                    vertical-align: middle;
+                    height: 2.4rem;
                     width: 251px;
                     overflow: hidden;
                     position: relative;
 
                     > div {
-                        height: max-content;
+                        display: flex;
                         width: 100%;
                         flex-wrap: wrap;
                         position: absolute;
@@ -38,8 +42,8 @@
                         > span {
                             display: inline-flex;
                             align-items: center;
-                            line-height: 1.1;
-                            height: 1.9rem;
+                            font-size: 2.4rem;
+                            line-height: 1;
                         }
 
                         @keyframes words-animate
@@ -136,8 +140,10 @@
         }
 
         &__image {
+            width: calc((7/12) * 100%);
             max-width: 100%;
-            padding-left: 4rem;
+            padding-right: 2rem;
+            padding-left: 2rem;
             margin-left: auto;
             margin-right: auto;
 
@@ -153,7 +159,7 @@
 
     &__footer {
         width: 100%;
-        margin-top: 4.35rem;
+        margin-top: 4rem;
         
         &-info {
             margin: 1.5rem 0;
