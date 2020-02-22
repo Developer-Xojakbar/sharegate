@@ -1,0 +1,38 @@
+@media (min-width: 1025px) {
+    .header {
+        &__main {
+            padding-left: 3.6rem;
+            padding-right: 3.6rem;
+            justify-content: flex-start;
+
+            &-container {
+                visibility: visible;
+                position: static;
+                opacity: 1;
+                height: 100%;
+                display: flex;
+
+                > * {
+                    margin-left: 2.5rem;
+                    display: inline-flex;
+                    visibility: visible;
+                }
+            }
+        }
+
+        &__product {
+            padding-left: 72px;
+            padding-right: 72px;
+
+            &-overcast {
+                display: flex;
+            }
+
+            &__links {
+                > * {
+                    display: flex;
+                }
+            }
+        }
+    }
+}

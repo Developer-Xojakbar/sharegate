@@ -20,28 +20,30 @@ const Header = () => {
                     <a className="header__main-sharegate" href="#">
                         <img src={require("../images/SVG/logo-sharegate1.svg")} alt="logo" />
                     </a>
-                    <div className="header__main-products">Products
-                        <div className="container">
-                            <div className="products-sg">
-                                <a className="sg-desktop" href="#">
-                                    <img src={require("../images/SVG/sgdesktop-logo.svg")} alt="ShareGate-products" />
-                                    <p>Migrate to Office 365 or SharePoint on-premises.</p>
-                                </a>
-                                <a className="sg-overcast" href="#">
-                                    <img src={require("../images/SVG/sgovercast-new-logo.svg")} alt="ShareGate-products" />
-                                    <p>Understand and reduce Azure costs.</p>
-                                </a>
-                                <a className="sg-apricot" href="#">
-                                    <img src={require("../images/SVG/sgapricot-logo.svg")} alt="ShareGate-products" />
-                                    <p>Keep Teams on track with automated governance.</p>
-                                </a>
+                    <div className="header__main-container">
+                        <div className="header__main-container-products">Products
+                            <div className="container">
+                                <div className="products-sg">
+                                    <a className="sg-desktop" href="#">
+                                        <img src={require("../images/SVG/sgdesktop-logo.svg")} alt="ShareGate-products" />
+                                        <p>Migrate to Office 365 or SharePoint on-premises.</p>
+                                    </a>
+                                    <a className="sg-overcast" href="#">
+                                        <img src={require("../images/SVG/sgovercast-new-logo.svg")} alt="ShareGate-products" />
+                                        <p>Understand and reduce Azure costs.</p>
+                                    </a>
+                                    <a className="sg-apricot" href="#">
+                                        <img src={require("../images/SVG/sgapricot-logo.svg")} alt="ShareGate-products" />
+                                        <p>Keep Teams on track with automated governance.</p>
+                                    </a>
+                                </div>
                             </div>
+                            <IconSVG className="header__main-container-products-small_down" iconName="icon-small-down" />
                         </div>
-                        <IconSVG className="header__main-products-small_down" iconName="icon-small-down" />
+                        <a className="header__main-container-why-us" href="#">Why us</a>
+                        <a className="header__main-container-support" href="#">Support</a>
+                        <a className="header__main-container-blog" href="#">Blog</a>
                     </div>
-                    <a className="header__main-why-us" href="#">Why us</a>
-                    <a className="header__main-support" href="#">Support</a>
-                    <a className="header__main-blog" href="#">Blog</a>
                 </div>
                 <div>
                     <hr />
