@@ -3,6 +3,10 @@
         height: 6rem;
     }
 
+    .space-block:nth-of-type(n + 11) {
+        height: 8rem;
+    }
+
     .mscloud {
         &__section {
             &__info {
