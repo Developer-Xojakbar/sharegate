@@ -6,6 +6,12 @@
                     display: none;
                 }
             }
+
+            &__mobile_links {
+                &-free-trial {
+                    display: inline-flex;
+                }
+            }
         }
     }
 }

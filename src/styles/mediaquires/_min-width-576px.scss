@@ -4,6 +4,13 @@
         padding-right: 3.6rem;
     }
 
+    .header {
+        > * {
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+        }
+    }
+
     .mscloud {
         &__section {
             &__info {
@@ -11,7 +18,11 @@
                     display: flex;
 
                     > * {
-                        width: 50%;
+                        width: calc(50% - 10px);
+                    }
+
+                    &-interactive_demo {
+                        margin-top: 0;
                     }
                 }
             }
