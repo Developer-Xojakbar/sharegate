@@ -26,39 +26,41 @@ const Support = () => {
 
     return (
         <div className="container">
-            <div className="support">
-                <div className="support__image">
-                    <img className="support__image-bckg-1" src={require('../images/support-agents-bg2x1.png')} alt="background" />
-                    <div className="support__image-container">
-                        <img className={"support__image-container-agent " + (select === "Charles" ? "active" : "")} src={require('../images/charles2x.jpg')} alt="agent" />
-                        <img className={"support__image-container-agent " + (select === "Anny" ? "active" : "")} src={require('../images/anny2x.jpg')} alt="agent" />
-                        <img className={"support__image-container-agent " + (select === "Dany" ? "active" : "")} src={require('../images/dany2x.jpg')} alt="agent" />
-                        <img className={"support__image-container-agent "} src={require('../images/dany2x.jpg')} alt="agent" />
+            <div className="support-container">
+                <div className="support">
+                    <div className="support__image">
+                        <img className="support__image-bckg-1" src={require('../images/support-agents-bg2x1.png')} alt="background" />
+                        <div className="support__image-container">
+                            <img className={"support__image-container-agent " + (select === "Charles" ? "active" : "")} src={require('../images/charles2x.jpg')} alt="agent" />
+                            <img className={"support__image-container-agent " + (select === "Anny" ? "active" : "")} src={require('../images/anny2x.jpg')} alt="agent" />
+                            <img className={"support__image-container-agent " + (select === "Dany" ? "active" : "")} src={require('../images/dany2x.jpg')} alt="agent" />
+                            <img className={"support__image-container-agent "} src={require('../images/dany2x.jpg')} alt="agent" />
+                        </div>
+                        <img className="support__image-bckg-2" src={require('../images/SVG/support-agents-particle.svg')} alt="background" />
                     </div>
-                    <img className="support__image-bckg-2" src={require('../images/SVG/support-agents-particle.svg')} alt="background" />
-                </div>
-                <div className="support__context">
-                    <p className="support__context-header-1">Unlimited support.<br/>Always free.</p>
-                    {AgentContext}
-                    <div className="support__context-btns">
-                        <img
-                            className={"support__context-btns-avatar " + (select === "Charles" ? "active" : "")}
-                            onClick={() => { handleSelect("Charles") }}
-                            src={require('../images/charlesmini2x.jpg')}
-                            alt="avatar"
-                        />
-                        <img
-                            className={"support__context-btns-avatar " + (select === "Anny" ? "active" : "")}
-                            onClick={() => { handleSelect("Anny") }}
-                            src={require('../images/annymini2x.jpg')}
-                            alt="avatar"
-                        />
-                        <img
-                            className={"support__context-btns-avatar " + (select === "Dany" ? "active" : "")}
-                            onClick={() => { handleSelect("Dany") }}
-                            src={require('../images/danymini2x.jpg')}
-                            alt="avatar"
-                        />
+                    <div className="support__context">
+                        <p className="support__context-header-1">Unlimited support.<br/>Always free.</p>
+                        {AgentContext}
+                        <div className="support__context-btns">
+                            <img
+                                className={"support__context-btns-avatar " + (select === "Charles" ? "active" : "")}
+                                onClick={() => { handleSelect("Charles") }}
+                                src={require('../images/charlesmini2x.jpg')}
+                                alt="avatar"
+                            />
+                            <img
+                                className={"support__context-btns-avatar " + (select === "Anny" ? "active" : "")}
+                                onClick={() => { handleSelect("Anny") }}
+                                src={require('../images/annymini2x.jpg')}
+                                alt="avatar"
+                            />
+                            <img
+                                className={"support__context-btns-avatar " + (select === "Dany" ? "active" : "")}
+                                onClick={() => { handleSelect("Dany") }}
+                                src={require('../images/danymini2x.jpg')}
+                                alt="avatar"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

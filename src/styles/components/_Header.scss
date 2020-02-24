@@ -23,7 +23,7 @@
         }
 
         &-container {
-            transition-property: all 0.25s;
+            transition: all 0.25s;
             width: 100%;
             visibility: hidden;
             top: 100%;
@@ -32,36 +32,37 @@
             left: 0;
             position: absolute;
             opacity: 0;
-            height: 100%;
+            height: fit-content;
             align-items: stretch;
 
             > * {
-                visibility: hidden;
                 align-items: center;
             }
 
             &-products {
-                @extend .context;
-                cursor: default;
-                display: inline-flex;
-                height: 100%;
-                align-items: center;
-                
-                &-small_down {
+                &-name {
+                    @extend .context;
+                    cursor: default;
                     display: inline-flex;
-                    height: 14.391px;
-                    width: 14.391px;
-                    margin-left: 5px;
-                    justify-content: center;
-                    transition: transform 0.25s;
-                    place-items: center;
+                    height: 100%;
+                    align-items: center;
+                    
+                    &-small_down {
+                        display: inline-flex;
+                        height: 14.391px;
+                        width: 14.391px;
+                        margin-left: 5px;
+                        justify-content: center;
+                        transition: transform 0.25s;
+                        place-items: center;
+                    }
                 }
-    
-                &:hover >  &-small_down {
+            
+                &:hover >  &-name > .icon {
                     transform: rotateX(180deg);
                 }
     
-                > div {
+                > .container {
                     display: flex;
                     width: 100vw;
                     margin-left: calc(50% - 50vw);
@@ -86,12 +87,13 @@
     
                         > a {
                             transition: all 0.25s;
-                            width: calc((1 / 3) * 100%);
+                            width: 100%;
                             padding-left: 10px;
                             padding-right: 10px;
                             font-weight: 400;
                             text-decoration: none;
                             color: $color-blue-01;
+                            line-height: 1;
     
                             > p {
                                 line-height: 1.25;
@@ -104,18 +106,68 @@
                         opacity: 0.5;
                     }
                 }
-                
-                &:hover > div{
-                    opacity: 1;
-                    visibility: visible;
-                    bottom: 5px;
-                }
             }
     
             &-why-us,
             &-support,
             &-blog {
                 @extend .context;
+            }
+        }
+
+        &-container.active {
+            top: calc(100% - 1px);
+            opacity: 1;
+            visibility: visible;
+
+            > a {
+                display: flex;
+                font-size: 1rem;
+                border-bottom: 1px solid #f0f0f0;
+                padding: 0 24px;
+                height: 60px;
+            }
+        }
+
+        &-hamburger {
+            display: none;
+            width: 24px;
+            height: 100%;
+            position: relative;
+            background-color: white;
+            outline: 0;
+
+            > span {
+                width: 24px;
+                height: 3px;
+                background-color: currentColor;
+                border-radius: 0;
+                position: absolute;
+                transition: top 75ms .12s,opacity 75ms , transform 75ms;
+            }
+
+            > span:nth-of-type(1) {
+                margin-top: -6px;
+            }
+
+            > span:nth-of-type(3) {
+                margin-top: 6px;
+            }
+        }
+
+        &-hamburger.active {
+            > span:nth-of-type(1) {
+                margin-top: 0;
+                transform: rotateZ(45deg);
+            }
+
+            > span:nth-of-type(2) {
+                opacity: 0;
+            }
+
+            > span:nth-of-type(3) {
+                margin-top: 0;
+                transform: rotateZ(-45deg);
             }
         }
     }
@@ -141,7 +193,19 @@
 
         &-overcast {
             height: 20px;
-            display: none;
+            display: flex;
+            background-color: white;
+
+            &-small_down {
+                display: none;
+                fill: $color-blue-01;
+                height: 16px;
+                width: 16px;
+                margin-left: 0.5rem;
+                transition: transform 0.25s;
+                align-self: center;
+                place-items: center;
+            }
         }
 
         &__links{
@@ -278,6 +342,98 @@
                 &:hover {
                     background-color: $color-blue-01;
                     color: white;
+                }
+            }
+        }
+
+        &__mobile_links {
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.25s;
+            width: 100%;
+            flex-wrap: wrap;
+            box-shadow:0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
+            top: 100%;
+            left: 0;
+            transform: translateY(10px);
+            position: absolute;
+            padding: 1.25rem;
+            line-height: 1.25;
+            max-height: 35rem;
+            z-index: 1000;
+            background-color: $color-light-blue-10;
+
+            .context {
+                display: flex;
+                text-decoration: none;
+                line-height: 1.4;
+                transition: 0.2s;
+            }
+
+            &-overview,
+            &-management,
+            &-optimization,
+            &-interactive_demo,
+            &-pricing,
+            &-free_trial,
+            &-log_in {
+                @extend .context;
+            }
+
+            &-management,
+            &-optimization,
+            &-interactive_demo,
+            &-pricing{
+                opacity: 0.5;
+            }
+
+            > a:not(:first-child) {
+                margin-top: 0.75rem;
+            }
+
+            > a:nth-of-type(-n + 5) {
+                width: fit-content;
+                font-size: 0.9rem;
+                color: inherit;
+            }
+
+            &-free_trial,
+            &-log_in {
+                padding: 0 20px;
+                border-radius: 50px;
+                font-size: 16px;
+                font-weight: 500;
+                transition: all .3s ease-in-out;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                height: 32px;
+                border: none;
+                font-family: Calibre,Helvetica,Arial,sans-serif;
+                white-space: nowrap;
+                outline: 0;
+                -webkit-appearance: none;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            &-free_trial {
+                color: white;
+                background-color: $color-blue-01;
+
+                &:hover {
+                    background-color: $color-blue-02;
+                }
+            }
+
+            &-log_in {
+                color: inherit;
+                border: 1px solid $color-blue-01;
+
+                &:hover {
+                    color: white;
+                    background-color: $color-blue-01;
                 }
             }
         }

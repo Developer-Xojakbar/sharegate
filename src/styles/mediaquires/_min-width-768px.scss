@@ -8,4 +8,52 @@
             height: 4rem;
         }
     }
+
+    .support {
+        display: flex;
+        margin-right: -1.5rem;
+        margin-left: -1.5rem;
+
+        &__image {
+            width: 50%;
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        &__context {
+            width: 50%;
+            padding: 5rem 1rem;
+        }
+    }
+
+    .footer {
+        &__list {
+            &-items {
+                &-products,
+                &-learn,
+                &-help_center,
+                &-company{
+                    width: 25%;
+                }
+            }
+        }
+
+        &__bottom {
+            &-info {
+                width: auto;
+                justify-content: flex-start;
+
+                &-link {
+                    margin-left: 2.5rem;
+                }
+            }
+
+            &-icons {
+                width: auto;
+                margin-top: 0;
+                margin-bottom: 0;
+                justify-content: flex-end;
+            }
+        }
+    }
 }

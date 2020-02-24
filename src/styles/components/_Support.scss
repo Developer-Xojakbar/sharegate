@@ -1,13 +1,10 @@
 .support {
+    position: relative;
     align-items: center;
-    margin-top: 6rem;
-    padding: 0 42px;
 
     &__image {
         display: flex;
         position: relative;
-        width: 50%;
-        padding: 0 4.225rem;
         justify-content: center;
         align-items: center;
         
@@ -50,12 +47,13 @@
 
             &-agent:nth-last-of-type(1){
                 position: relative!important;
+                max-height: 494px;
             }
         }
 
         &-bckg-2 {
             margin-top: 4rem;
-            margin-right: 4.5rem;
+            margin-right: 1.5rem;
             z-index: 50;
             top: 0;
             right: 0;
@@ -64,18 +62,20 @@
     }
 
     &__context {
-        padding: 5rem 1.5rem;
-        width: 50%;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
 
         &-header-1 {
+            font-size: 1.8rem;
             @extend .extend-h48px-type-1;
-            margin-bottom: 3rem;
+            margin-bottom: 1.5rem;
         }
 
         &-agent {
             display: none;
 
             &-name {
+                font-size: 1.6rem;
                 @extend .extend-h2rem-type-2;
                 margin-bottom: 1rem;
             }

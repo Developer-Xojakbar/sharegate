@@ -1,11 +1,10 @@
 .banner-outer-container {
-    margin-top: 8rem;
     padding: 1.25rem 0;
     position: relative;
 }
 
-.banner-bckg {
-    object-fit: contain;
+img.banner-bckg {
+    object-fit: cover;
     padding: 0;
     max-width: 100%;
     width: 100%;
@@ -39,6 +38,7 @@
     }
 
     &-header {
+        font-size: 1.8rem;
         @extend .extend-h48px-type-2;
         max-width: 100%;
         margin: 0 auto 1.5rem auto;
@@ -46,24 +46,14 @@
     }
 
     &-link {
+        @extend .extend-button-type-1;
         color: white;
-        font-size: 0.9rem;
-        padding: 0 1.6rem;
-        height: 2.4rem;
-        line-height: 2.4rem;
-        border-radius: 2.5rem;
-        font-weight: 500;
-        transition: 0.3s ease-in-out;
-        text-decoration: none;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
         font-family: Calibre,Helvetica,Arial,sans-serif;
-        white-space: nowrap;
-        outline: 0;
-        -webkit-appearance: none;
-        text-align: center;
         background-color: rgb(32 , 150 , 255);
+        position: inherit;
+        z-index: 60;
     }
 
     &-spinner-bottom {

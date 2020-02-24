@@ -1,0 +1,41 @@
+@media (min-width: 1280px) {
+    .space-block {
+        height: 6rem;
+    }
+
+    .mscloud {
+        &__section {
+            &__info {
+                width: calc((5/12) * 100%);
+            }
+
+            &__image {
+                width: calc((7/12) * 100%);
+            }
+        }
+    }
+
+    .support {
+        &__image {
+            &-bckg-2 {
+                margin-right: 4.5rem;
+            }
+        }
+    }
+
+    img.banner-bckg {
+        object-fit: contain;
+    }
+
+    .footer {
+        &__list {
+            &-logo {
+                display: block;
+            }
+
+            &-items {
+                width: calc((8/12) * 100.625% );
+            }
+        }
+    }
+}

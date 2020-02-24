@@ -9,28 +9,30 @@ const Footer = () => {
             <div className="footer">
                 <div className="footer__list">
                     <IconSVG className="footer__list-logo" iconName="icon-mini-logo" />
-                    <div className="footer__list-products">
-                        <p className="footer__list-products-name">Products</p>
-                        <a className="footer__list-products-link" href="#">ShareGate Desktop</a>
-                        <a className="footer__list-products-link active" href="#">ShareGate Overcast</a>
-                        <a className="footer__list-products-link" href="#">ShareGate Apricot</a>
-                        <a className="footer__list-products-link" href="#">View all</a>
-                    </div>
-                    <div className="footer__list-learn">
-                        <p className="footer__list-learn-name">Learn</p>
-                        <a className="footer__list-learn-link" href="#">Blog</a>
-                        <a className="footer__list-learn-link" href="#">Resource library</a>
-                        <a className="footer__list-learn-link" href="#">SharePoint migration</a>
-                    </div>
-                    <div className="footer__list-help_center">
-                        <p className="footer__list-help_center-name">Help center</p>
-                        <a className="footer__list-help_center-link" href="#">Support</a>
-                        <a className="footer__list-help_center-link" href="#">Give feedback</a>
-                    </div>
-                    <div className="footer__list-company">
-                        <p className="footer__list-company-name">Company</p>
-                        <a className="footer__list-company-link" href="#">Contact us</a>
-                        <a className="footer__list-company-link" href="#">Free licenses for Microsoft MVPs</a>
+                    <div className="footer__list-items">
+                        <div className="footer__list-items-products">
+                            <p className="footer__list-items-products-name">Products</p>
+                            <a className="footer__list-items-products-link" href="#">ShareGate Desktop</a>
+                            <a className="footer__list-items-products-link active" href="#">ShareGate Overcast</a>
+                            <a className="footer__list-items-products-link" href="#">ShareGate Apricot</a>
+                            <a className="footer__list-items-products-link" href="#">View all</a>
+                        </div>
+                        <div className="footer__list-items-learn">
+                            <p className="footer__list-items-learn-name">Learn</p>
+                            <a className="footer__list-items-learn-link" href="#">Blog</a>
+                            <a className="footer__list-items-learn-link" href="#">Resource library</a>
+                            <a className="footer__list-items-learn-link" href="#">SharePoint migration</a>
+                        </div>
+                        <div className="footer__list-items-help_center">
+                            <p className="footer__list-items-help_center-name">Help center</p>
+                            <a className="footer__list-items-help_center-link" href="#">Support</a>
+                            <a className="footer__list-items-help_center-link" href="#">Give feedback</a>
+                        </div>
+                        <div className="footer__list-items-company">
+                            <p className="footer__list-items-company-name">Company</p>
+                            <a className="footer__list-items-company-link" href="#">Contact us</a>
+                            <a className="footer__list-items-company-link" href="#">Free licenses for Microsoft MVPs</a>
+                        </div>
                     </div>
                     <div className="footer__list-news_letter">
                         <p className="footer__list-news_letter-name">Newsletter</p>

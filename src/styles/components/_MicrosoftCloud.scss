@@ -1,25 +1,24 @@
 .mscloud {
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     position: relative;
     flex-wrap: wrap;
 
     &__section {
         display: flex;
-        margin-left: -2rem;
-        margin-right: -2rem;
+        flex-wrap: wrap;
 
         &__info {
             align-self: center;
             width: calc((5/12) * 100%);
             max-width: 32rem;
             margin-right: auto;
-            padding-right: 2rem;
-            padding-left: 2rem;
+            text-align: center;
+            padding-top: 1.25rem;
 
             &-header {
                 margin: 0;
                 font-weight: 600;
-                font-size: 2.4rem;
+                font-size: 1.8rem;
                 line-height: 1.1;
                 margin-bottom: 1rem;
 
@@ -70,16 +69,21 @@
             }
 
             &-main {
-                margin-bottom: 2rem;
+                margin-bottom: 1.5rem;
                 margin-top: 1.5rem;
                 font-size: 1.1rem;
             }
 
             &-btns {
-                justify-content: flex-start;
-                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
                 align-items: center;
                 flex: wrap;
+                text-align: center;
+
+                > * {
+                    width: 100%;
+                }
 
                 &-free_trial {
                     @extend .extend-button-type-1;
@@ -108,10 +112,8 @@
         }
 
         &__image {
-            width: calc((7/12) * 100%);
-            max-width: 100%;
-            padding-right: 2rem;
-            padding-left: 2rem;
+            width: 100%;
+            max-width: 32rem;
             margin-left: auto;
             margin-right: auto;
 
@@ -138,7 +140,7 @@
         }
 
         &-logo_images {
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             margin: 1.5rem 0;
             justify-content: space-around;
             align-items: center;

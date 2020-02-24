@@ -3,4 +3,65 @@
         padding-left: 3.6rem;
         padding-right: 3.6rem;
     }
+
+    .mscloud {
+        &__section {
+            &__info {
+                &-btns {
+                    display: flex;
+
+                    > * {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    .section {
+        &__context {
+            &-link {
+                width: auto;
+            }
+        }
+    }
+    
+    .tools {
+        max-width: 1344px;
+        padding: 1px 3.6rem;
+
+        &__items {
+            padding: 0 3.6rem;
+        }
+    }
+
+    .footer {
+        &__list {
+            &-items {
+                &-products,
+                &-learn,
+                &-help_center,
+                &-company{
+                    width: 50%;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        &__bottom {
+            &-info {
+                &-created,
+                &-link {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
+
+            &-icons {
+                &-link {
+                    margin-left: 0.75rem;
+                }
+            }
+        }
+    }
 }

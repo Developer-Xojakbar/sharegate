@@ -1,5 +1,5 @@
 .footer {
-    margin-top: 12rem;
+    margin-top: 4rem;
     margin-bottom: 4rem;
     flex-wrap: wrap;
 
@@ -12,7 +12,7 @@
         flex-wrap: wrap;
 
         &-logo {
-            display: block;
+            display: none;
             fill: black;
             height: 2.8rem;
             width: 1rem;
@@ -24,46 +24,51 @@
             margin-bottom: 1rem;
         }
 
-        &-products,
-        &-learn,
-        &-help_center,
-        &-company{
-            width: calc((2/12) * 100%);
-            padding: 0 0.5rem;
-            margin-bottom: 1rem;
+        &-items {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -0.5rem;
             margin-left: -0.5rem;
-            margin-right: 11.25px;
-            line-height: 1;
 
-            &-name {
-                @extend .list-item-name;
-            }
+            &-products,
+            &-learn,
+            &-help_center,
+            &-company{
+                width: 100%;
+                padding: 0 0.5rem;
+                margin-bottom: 2.25rem;
+                line-height: 1;
 
-            &-link {
-                display: flex;
-                width: fit-content;
-                line-height: 1.2;
-                margin-bottom: 0.5rem;
-                font-size: 0.9rem;
-                opacity: 0.5;
-                text-decoration: none;
-                transition: all 0.2s ease;
-                color: inherit;
+                &-name {
+                    @extend .list-item-name;
+                }
 
-                &:hover {
+                &-link {
+                    display: flex;
+                    width: fit-content;
+                    line-height: 1.2;
+                    margin-bottom: 0.5rem;
+                    font-size: 0.9rem;
+                    opacity: 0.5;
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                    color: inherit;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+
+                &-link.active {
                     opacity: 1;
                 }
             }
-
-            &-link.active {
-                opacity: 1;
-            }
         }
+        
 
         &-news_letter {
-            margin-left: -5px;
-            width: calc((3/12) * 100%);
-            padding-left: 0.75rem;
+            width: 100%;
 
             &-name {
                 @extend .list-item-name
@@ -94,6 +99,7 @@
 
     &__bottom {
         display: flex;
+        flex-wrap: wrap;
         padding-top: 1.5rem;
         margin-top: 2.5rem;
         line-height: 2;
@@ -104,11 +110,19 @@
 
         &-info {
             display: flex;
-            width: auto;
-            justify-content: flex-start;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+
+            &-created {
+                margin-top: 0.25rem;
+                margin-bottom: 0.5rem;
+            }
 
             &-link {
-                margin-left: 2.5rem;
+                margin-top: 0.25rem;
+                margin-bottom: 0.5rem;
+                margin-left: 1.25rem;
                 text-decoration: none;
                 color: inherit;
                 transition: all 0.2s ease;
@@ -121,13 +135,13 @@
 
         &-icons {
             display: flex;
-            width: auto;
-            justify-content: flex-end;
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 1.5rem;
 
             &-link {
                 display: inline-flex;
                 align-items: center;
-                margin-left: 0.75rem;
                 width: 0.75rem;
                 height: 1.6rem;
                 opacity: 1;
