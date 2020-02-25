@@ -14,14 +14,6 @@
             display: flex;
         }
 
-        .context {
-            text-decoration: none;
-            line-height: 1;
-            color: $color-blue-01;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
         &-container {
             transition: all 0.25s;
             width: 100%;
@@ -41,7 +33,7 @@
 
             &-products {
                 &-name {
-                    @extend .context;
+                    @extend .extend-h18px-type-1;
                     cursor: default;
                     display: inline-flex;
                     height: 100%;
@@ -111,7 +103,7 @@
             &-why-us,
             &-support,
             &-blog {
-                @extend .context;
+                @extend .extend-h18px-type-1;
             }
         }
 

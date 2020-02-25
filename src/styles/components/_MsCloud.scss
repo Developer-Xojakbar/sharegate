@@ -26,10 +26,17 @@
                 > div {
                     display: inline-flex;
                     vertical-align: middle;
-                    height: 2.4rem;
-                    width: 251px;
+                    line-height: 1;
                     overflow: hidden;
                     position: relative;
+
+                    > span {
+                        display: inline-flex;
+                        align-items: center;
+                        font-size: inherit;
+                        line-height: 1;
+                        opacity: 0;
+                    }
 
                     > div {
                         display: flex;
@@ -42,7 +49,7 @@
                         > span {
                             display: inline-flex;
                             align-items: center;
-                            font-size: 2.4rem;
+                            font-size: inherit;
                             line-height: 1;
                         }
 

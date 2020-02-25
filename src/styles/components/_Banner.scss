@@ -38,8 +38,7 @@ img.banner-bckg {
     }
 
     &-header {
-        font-size: 1.8rem;
-        @extend .extend-h48px-type-2;
+        @extend .extend-h36px-type-2;
         max-width: 100%;
         margin: 0 auto 1.5rem auto;
         color: white;

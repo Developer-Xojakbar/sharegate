@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import MicrosoftCloud from './MicrosoftCloud';
+import MsCloud from './MsCloud';
 import Sections from './Sections';
 import Tools from './Tools';
 import Support from './Support';
@@ -11,7 +11,7 @@ const App = () => {
     return (
         <React.Fragment>
             <Header />
-            <MicrosoftCloud />
+            <MsCloud />
             <Sections />
             <Tools />
             <Support />

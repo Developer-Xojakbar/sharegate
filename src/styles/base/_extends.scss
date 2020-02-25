@@ -17,7 +17,7 @@
     cursor: pointer;
 }
 
-.extend-button-type-1 { // microsoftcloud , section
+.extend-button-type-1 { // mscloud , section , banner
     @extend .extend-button;
     @extend .extend-button-additional;
     height: 2.4rem;
@@ -35,32 +35,40 @@
     font-size: 0.8rem;
 }
 /***************Head-context****************/
-.extend-h24px-type-2 {
+.extend-h18px-type-1 { // header
+    text-decoration: none;
+    line-height: 1;
+    color: $color-blue-01;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.extend-h24px-type-2 { // footer
     font-size: 1.2rem;
     line-height: 1.2;
     font-weight: 600;
 }
 
-.extend-h2rem-type-1 {
-    font-size: 2rem;
+.extend-h32px-type-1 { // section , tools
+    font-size: 1.6rem;
     line-height: 1.1;
     font-weight: 600;
 }
 
-.extend-h2rem-type-2 {
-    font-size: 2rem;
+.extend-h32px-type-2 { // support
+    font-size: 1.6rem;
     line-height: 1.2;
     font-weight: 600;
 }
 
-.extend-h48px-type-1 {
-    font-size: 2.4rem;
+.extend-h36px-type-1 { // support
+    font-size: 1.8rem;
     line-height: 1.1;
     font-weight: 600;
 }
 
-.extend-h48px-type-2 {
-    font-size: 2.4rem;
+.extend-h36px-type-2 { // banner
+    font-size: 1.8rem;
     line-height: 1.2;
     font-weight: 600;
 }

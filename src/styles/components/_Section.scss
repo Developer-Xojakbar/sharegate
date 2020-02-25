@@ -40,8 +40,7 @@
         }
 
         &-black {
-            font-size: 1.6rem;
-            @extend .extend-h2rem-type-1;
+            @extend .extend-h32px-type-1;
             display: none;
             margin-bottom: 0.75rem;
         }
